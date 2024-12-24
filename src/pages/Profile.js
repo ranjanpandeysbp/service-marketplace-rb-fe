@@ -10,7 +10,7 @@ const Profile = () => {
     return <Navigate to="/login" />;
   }
   return (
-    <div className="container my-5 d-flex flex-column">
+    <div className="smp-container my-5 d-flex flex-column">
       <div className="p-5 text-center bg-body-tertiary rounded-3">
         <h1 className="text-body-emphasis">{user.firstName} {user.lastName}</h1>
         <p className="col-lg-8 mx-auto fs-5 text-muted">

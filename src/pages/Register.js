@@ -53,7 +53,7 @@ const Register = () => {
     return <Navigate to="/profile" />;
   }
   return (
-    <div>
+    <div className="smp-container">
       <div className='row justify-content-center'>
         <div className='col-md-8 col-sm-12'>
           <h3 className='text-center'>Register now</h3>
@@ -85,7 +85,9 @@ const Register = () => {
                 <option value="ROLE_ADMIN">Admin</option>
               </select>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <div className="d-grid mb-2">
+              <button type="submit" className="btn btn-primary">Submit</button>
+            </div>
           </form>
         </div>
       </div>

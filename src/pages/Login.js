@@ -45,7 +45,7 @@ const Login = () => {
     return <Navigate to="/profile" />;
   }
   return (
-    <div>
+    <div className="smp-container">
       <div className='row justify-content-center'>
         <div className='col-md-8 col-sm-12'>
             <h3 className='text-center'>Login now</h3>
@@ -62,7 +62,9 @@ const Login = () => {
               <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
               <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" className="form-control" id="exampleInputPassword1" />
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <div className="d-grid">
+              <button type="submit" className="btn btn-primary">Submit</button>
+            </div>
           </form>
         </div>
       </div>
