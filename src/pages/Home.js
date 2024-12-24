@@ -9,7 +9,7 @@ const Home = () => {
     return <Navigate to="/login" />;
   }
   return (
-    <div>Home</div>
+    <div className="smp-container">Home</div>
   )
 }
 
