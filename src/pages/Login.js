@@ -45,11 +45,7 @@ const Login = () => {
     return <Navigate to="/profile" />;
   }
   return (
-<<<<<<< HEAD
     <div className="smp-container" data-aos="zoom-in">
-=======
-    <div className="smp-container">
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
       <div className='row justify-content-center'>
         <div className='col-md-8 col-sm-12'>
             <h3 className='text-center'>Login now</h3>
@@ -67,11 +63,7 @@ const Login = () => {
               <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" className="form-control" id="exampleInputPassword1" />
             </div>
             <div className="d-grid">
-<<<<<<< HEAD
               <button type="submit" className="btn btn-warning">Submit</button>
-=======
-              <button type="submit" className="btn btn-primary">Submit</button>
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
             </div>
           </form>
         </div>

@@ -1,14 +1,10 @@
 import React, { useEffect, useState }  from 'react'
 import ManageMenu from '../../components/ManageMenu'
-import { motion } from "framer-motion";
 import crudService from '../../services/crud.service';
 import LoadingIcon from '../../components/LoadingIcon';
 import Swal from 'sweetalert2'
-<<<<<<< HEAD
 import { useSelector } from "react-redux";
 import { Navigate } from 'react-router-dom';
-=======
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
 
 const Category = () => {
 
@@ -18,11 +14,8 @@ const Category = () => {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(false);
 
-<<<<<<< HEAD
     const { user, isLoggedIn } = useSelector(state => state.auth);
       
-=======
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
     const onSubmit = async (event)=>{
         event.preventDefault();
         let request = {name, description}
@@ -72,7 +65,6 @@ const Category = () => {
         loadItems();
     }, []);
 
-<<<<<<< HEAD
     if (!isLoggedIn) {
         return <Navigate to="/login" />;
     }
@@ -80,19 +72,6 @@ const Category = () => {
         <div className="smp-container mx-auto">
             <ManageMenu />
                 <div className="mt-3 border border-warning" data-aos="fade-right">
-=======
-    return (
-        <div className="smp-container mx-auto">
-            <ManageMenu />
-            <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                    duration: 0.4,
-                    scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
-                }}>
-                <div className="mt-3 border border-primary-subtle">
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
                     <div className="row justify-content-center">
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className="card shadow-sm">
@@ -110,11 +89,7 @@ const Category = () => {
                                             <textarea onChange={(e)=>setDescription(e.target.value)} value={description} placeholder="Enter category description" className="form-control" id="bdescription"></textarea>
                                         </div>
                                         <div className="text-center d-grid">
-<<<<<<< HEAD
                                             <button type="submit" className="btn btn-warning">Submit</button>
-=======
-                                            <button type="submit" className="btn btn-primary">Submit</button>
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
                                         </div>
                                     </form>
                                 </div>
@@ -122,14 +97,8 @@ const Category = () => {
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
             {loading ? <LoadingIcon /> :
             <div className="card mt-3 border border-warning mb-2">
-=======
-            </motion.div>
-            {loading ? <LoadingIcon /> :
-            <div className="card mt-3 border border-primary-subtle mb-2">
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
                 <div className="card-body">
                     <h3 className="card-title text-center mb-2">Categories</h3>
                     <div className="table-responsive">
@@ -150,11 +119,7 @@ const Category = () => {
                                             <td className="fs-6">{item.description}</td>
                                             <td className="fs-6">{item.updatedAt}</td>
                                             <td className="d-flex">
-<<<<<<< HEAD
                                                 <button type="button" className="btn btn-outline-warning text-dark fw-medium" onClick={()=>handleEdit(item.id)}>Edit</button>
-=======
-                                                <button type="button" className="btn btn-outline-primary" onClick={()=>handleEdit(item.id)}>Edit</button>
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
                                                 {/* <button type="button" class="btn btn-outline-secondary">Deactivate</button> */}
                                             </td>
                                         </tr>

@@ -53,11 +53,7 @@ const Register = () => {
     return <Navigate to="/profile" />;
   }
   return (
-<<<<<<< HEAD
     <div className="smp-container" data-aos="zoom-in">
-=======
-    <div className="smp-container">
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
       <div className='row justify-content-center'>
         <div className='col-md-8 col-sm-12'>
           <h3 className='text-center'>Register now</h3>
@@ -90,11 +86,7 @@ const Register = () => {
               </select>
             </div>
             <div className="d-grid mb-2">
-<<<<<<< HEAD
               <button type="submit" className="btn btn-warning">Submit</button>
-=======
-              <button type="submit" className="btn btn-primary">Submit</button>
->>>>>>> a369ad184f34a9b1d5c770c59ddfc8cc5ecc21f9
             </div>
           </form>
         </div>
