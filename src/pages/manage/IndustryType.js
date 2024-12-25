@@ -14,7 +14,7 @@ const IndustryType = () => {
   return (
     <div className="smp-container mx-auto">
             <ManageMenu />
-                <div className="mt-3 border border-primary-subtle" data-aos="fade-right">
+                <div className="mt-3 border border-warning" data-aos="fade-right">
                     <div className="row justify-content-center">
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className="card shadow-sm">
@@ -30,7 +30,7 @@ const IndustryType = () => {
                                             <textarea placeholder="Enter industry description" className="form-control" id="bdescription"></textarea>
                                         </div>
                                         <div className="text-center d-grid">
-                                            <button type="submit" className="btn btn-primary">Submit</button>
+                                            <button type="submit" className="btn btn-warning">Submit</button>
                                         </div>
                                     </form>
                                 </div>

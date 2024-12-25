@@ -72,7 +72,7 @@ const Category = () => {
     return (
         <div className="smp-container mx-auto">
             <ManageMenu />
-                <div className="mt-3 border border-primary-subtle" data-aos="fade-right">
+                <div className="mt-3 border border-warning" data-aos="fade-right">
                     <div className="row justify-content-center">
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             <div className="card shadow-sm">
@@ -90,7 +90,7 @@ const Category = () => {
                                             <textarea onChange={(e)=>setDescription(e.target.value)} value={description} placeholder="Enter category description" className="form-control" id="bdescription"></textarea>
                                         </div>
                                         <div className="text-center d-grid">
-                                            <button type="submit" className="btn btn-primary">Submit</button>
+                                            <button type="submit" className="btn btn-warning">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -99,7 +99,7 @@ const Category = () => {
                     </div>
                 </div>
             {loading ? <LoadingIcon /> :
-            <div className="card mt-3 border border-primary-subtle mb-2">
+            <div className="card mt-3 border border-warning mb-2">
                 <div className="card-body">
                     <h3 className="card-title text-center mb-2">Categories</h3>
                     <div className="table-responsive">
@@ -120,7 +120,7 @@ const Category = () => {
                                             <td className="fs-6">{item.description}</td>
                                             <td className="fs-6">{item.updatedAt}</td>
                                             <td className="d-flex">
-                                                <button type="button" className="btn btn-outline-primary" onClick={()=>handleEdit(item.id)}>Edit</button>
+                                                <button type="button" className="btn btn-outline-warning text-dark fw-medium" onClick={()=>handleEdit(item.id)}>Edit</button>
                                                 {/* <button type="button" class="btn btn-outline-secondary">Deactivate</button> */}
                                             </td>
                                         </tr>

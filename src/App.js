@@ -40,7 +40,7 @@ function App() {
  
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">SMP</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,22 +49,22 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
              {isLoggedIn && <li className="nav-item">
-                <Link className={`nav-link text-color atag ${location.pathname==="/" || location.pathname==="/home" ? "border-2 border-bottom border-white active" : ""}`} aria-current="page" to="/home">Home</Link>
+                <Link className={`nav-link text-color atag ${location.pathname==="/" || location.pathname==="/home" ? "border-2 border-bottom border-warning active" : ""}`} aria-current="page" to="/home">Home</Link>
               </li> }
               {isLoggedIn && <li className="nav-item">
-                <Link className={`nav-link text-color atag ${location.pathname==="/profile" ? "border-2 border-bottom border-white active" : ""}`} to="/profile">Profile</Link>
+                <Link className={`nav-link text-color atag ${location.pathname==="/profile" ? "border-2 border-bottom border-warning active" : ""}`} to="/profile">Profile</Link>
               </li> }
               {isLoggedIn && <li className="nav-item">
-                <Link className={`nav-link text-color atag ${location.pathname==="/manage/category" || location.pathname==="/manage/industry" || location.pathname==="/manage/business" ? "border-2 border-bottom border-white active" : ""}`} to="/manage/business">Manage</Link>
+                <Link className={`nav-link text-color atag ${location.pathname==="/manage/category" || location.pathname==="/manage/industry" || location.pathname==="/manage/business" ? "border-2 border-bottom border-warning active" : ""}`} to="/manage/business">Manage</Link>
               </li> }
               {!isLoggedIn && <li className="nav-item">
-                <Link className={`nav-link text-color atag ${location.pathname==="/login" ? "border-2 border-bottom border-white active" : ""}`} to="/login">Login</Link>
+                <Link className={`nav-link text-color atag ${location.pathname==="/login" ? "border-2 border-bottom border-warning active" : ""}`} to="/login">Login</Link>
               </li>}
               {isLoggedIn && <li className="nav-item">
                 <a style={{ 'cursor': 'pointer' }} className="nav-link text-color atag" onClick={()=>handleLogout()}>Logout</a>
               </li>}
               {!isLoggedIn && <li className="nav-item">
-                <Link className={`nav-link text-color atag ${location.pathname==="/register" ? "border-2 border-bottom border-white active" : ""}`} to="/register">Register</Link>
+                <Link className={`nav-link text-color atag ${location.pathname==="/register" ? "border-2 border-bottom border-warning active" : ""}`} to="/register">Register</Link>
               </li>}
             </ul>
           </div>

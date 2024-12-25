@@ -63,7 +63,7 @@ const Login = () => {
               <input value={password} onChange={(e)=>setPassword(e.target.value)} type="password" className="form-control" id="exampleInputPassword1" />
             </div>
             <div className="d-grid">
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-warning">Submit</button>
             </div>
           </form>
         </div>
