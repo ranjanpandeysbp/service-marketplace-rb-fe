@@ -5,3 +5,5 @@ https://examples.motion.dev/react
 https://medium.com/@sanksiddharth/animating-your-web-pages-a-beginners-guide-with-framer-motion-5de404cd25df
 
 https://github.com/obify/hy-ims-fe/blob/dev-ranjan/src/pages/productinventory/ProductInventory.js
+
+https://www.npmjs.com/package/react-multi-carousel
