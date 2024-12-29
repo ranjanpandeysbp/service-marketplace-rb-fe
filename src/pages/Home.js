@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from "react-redux";
-import { Navigate } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import "./Home.css";
 
 const Home = () => {
@@ -26,7 +26,7 @@ const Home = () => {
                   <p> An online learning and teaching marketplace with over 204000 courses and 54 million students. Learn programming, marketing, data science and more.</p>
                 </div>
                 <div className="px-2 py-2">
-                  <button type="button" className="btn btn-outline-warning">Checkout Our Services</button>
+                  <Link to="/onboard/provider" className="btn btn-outline-warning">Onboard your business</Link>
                 </div>
               </div>
             </div>
