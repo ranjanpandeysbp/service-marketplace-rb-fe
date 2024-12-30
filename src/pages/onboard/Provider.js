@@ -112,9 +112,6 @@ const Provider = () => {
         loadItems();
     }, []);
 
-    if (!isLoggedIn) {
-        return <Navigate to="/login" />;
-    }
     return (
         <div className="smp-container mx-auto">
             <div className="mt-3 border border-warning" data-aos="fade-right">

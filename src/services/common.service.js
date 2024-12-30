@@ -6,6 +6,16 @@ const onboardBusiness = (request, urlpath) => {
   return axios.post(API_URL + urlpath, request);
 };
 
+const addBusinessItem = (request, urlpath) => {
+  return axios.post(API_URL + urlpath, request);
+};
+
+const uploadImages = (request, urlpath) => {
+  return axios.post(API_URL + urlpath, request);
+};
+
 export default {
-  onboardBusiness
+  onboardBusiness,
+  addBusinessItem,
+  uploadImages
 };

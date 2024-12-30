@@ -80,9 +80,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/profile" element={<Profile />} />
           <Route path="/onboard/provider" element={<Provider />} />
-          <Route path="/onboard/businessdetails/:id" element={<Businessdetails />} />
+          <Route path="/onboard/businessdetails/:businessDetailId" element={<Businessdetails />} />
           <Route path="/manage/business" element={<BusinessType />} />
           <Route path="/manage/industry" element={<IndustryType />} />
           <Route path="/manage/category" element={<Category />} />
