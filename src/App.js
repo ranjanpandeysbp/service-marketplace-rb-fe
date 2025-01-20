@@ -16,6 +16,7 @@ import Category from "./pages/manage/Category";
 import axios from "axios";
 import Provider from "./pages/onboard/Provider";
 import Businessdetails from "./pages/onboard/Businessdetails";
+import PasswordReset from "./pages/PasswordReset";
 
 function App() {
   
@@ -56,8 +57,10 @@ function App() {
               {isLoggedIn && <li className="nav-item">
                 <Link className={`nav-link text-color atag ${location.pathname==="/profile" ? "border-2 border-bottom border-warning active" : ""}`} to="/profile">Profile</Link>
               </li> }
-              {isLoggedIn && <li className="nav-item">
-                <Link className={`nav-link text-color atag ${location.pathname==="/manage/category" || location.pathname==="/manage/industry" || location.pathname==="/manage/business" ? "border-2 border-bottom border-warning active" : ""}`} to="/manage/business">Manage</Link>
+              {isLoggedIn && user.roles[0] == 'ROLE_ADMIN' && <li className="nav-item">
+                <Link className={`nav-link text-color atag ${location.pathname==="/manage/category" || location.pathname==="/manage/industry" || location.pathname==="/manage/business" ? "border-2 border-bottom border-warning active" : ""}`} to="/manage/business">
+                    Manage
+                </Link>
               </li> }
               {!isLoggedIn && <li className="nav-item">
                 <Link className={`nav-link text-color atag ${location.pathname==="/login" ? "border-2 border-bottom border-warning active" : ""}`} to="/login">Login</Link>
@@ -80,6 +83,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/reset-password" element={<PasswordReset />} />
           <Route path="/onboard/provider" element={<Provider />} />
           <Route path="/onboard/businessdetails/:businessDetailId" element={<Businessdetails />} />
           <Route path="/manage/business" element={<BusinessType />} />
