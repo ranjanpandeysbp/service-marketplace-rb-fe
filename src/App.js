@@ -17,6 +17,7 @@ import axios from "axios";
 import Provider from "./pages/onboard/Provider";
 import Businessdetails from "./pages/onboard/Businessdetails";
 import PasswordReset from "./pages/PasswordReset";
+import SubCategory from "./pages/manage/SubCategory";
 
 function App() {
   
@@ -58,7 +59,7 @@ function App() {
                 <Link className={`nav-link text-color atag ${location.pathname==="/profile" ? "border-2 border-bottom border-warning active" : ""}`} to="/profile">Profile</Link>
               </li> }
               {isLoggedIn && user.roles[0] == 'ROLE_ADMIN' && <li className="nav-item">
-                <Link className={`nav-link text-color atag ${location.pathname==="/manage/category" || location.pathname==="/manage/industry" || location.pathname==="/manage/business" ? "border-2 border-bottom border-warning active" : ""}`} to="/manage/business">
+                <Link className={`nav-link text-color atag ${location.pathname==="/manage/category" || location.pathname==="/manage/subcategory" || location.pathname==="/manage/industry" || location.pathname==="/manage/business" ? "border-2 border-bottom border-warning active" : ""}`} to="/manage/category">
                     Manage
                 </Link>
               </li> }
@@ -89,6 +90,7 @@ function App() {
           <Route path="/manage/business" element={<BusinessType />} />
           <Route path="/manage/industry" element={<IndustryType />} />
           <Route path="/manage/category" element={<Category />} />
+          <Route path="/manage/subcategory" element={<SubCategory />} />
         </Routes>
       </div>
     </div>
