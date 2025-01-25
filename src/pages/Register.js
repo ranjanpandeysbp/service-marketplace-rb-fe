@@ -86,7 +86,7 @@ const Register = () => {
               </select>
             </div>
             <div className="d-grid mb-2">
-              <button type="submit" className="btn btn-warning">Submit</button>
+              <button type="submit" className="btn-smp-success">Submit</button>
             </div>
           </form>
         </div>

@@ -1,24 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root{/*declare global variables here*/
+  --item-color: rgb(196, 196, 21);
+  --primary-color: rgb(23, 184, 166);
+  --primary-dark-color: rgb(18, 162, 145);
+  --secondary-color: rgb(240, 33, 26);
+  --max-w: 700px;
+  --gray-color: rgb(68, 71, 91);
+  --yellow-color: rgb(254, 188, 33);
+  --dark-yellow-color: rgb(241, 173, 15);
+}
 body{
-    font-family: "Poppins", serif;
+    font-family: "Poppins", serif !important;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+.search-container{
+    display: flex;
+    justify-content: space-between !important;
+}
+.btn-smp-success{
+  background-color: var(--primary-color);
+  color: white;
+  border: var(--primary-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.white-anchor{
+  text-decoration: none !important;
+  color: white !important;
+}
+.btn-smp-success:hover{
+  background-color: var(--primary-dark-color);
+  border: var(--primary-color);
+  color: white
+}
 .text-color{
-    color: rgb(254, 188, 33) !important
+    color: var(--gray-color) !important
+}
+.text-color-dark{
+  color: var(--gray-color) !important
 }
 .smp-container{
     width: 60%;
     margin: auto;
+    margin-top: 20px;
 }
 .nav-active{
-    background-color:  rgb(254, 188, 33) !important;
+    background-color:  var(--gray-color) !important;
+}
+.image-home-banner {
+  transition: transform 0.3s ease;
+}
+
+.image-home-banner:hover {
+  transform: scale(1.05);
 }
 .atag {
     display: inline-block;
     position: relative;
-    color:  rgb(227, 160, 5);
+    color:  var(--gray-color);
     text-decoration: none;
   }
   .atag::after {
@@ -35,7 +80,7 @@ body{
     transition: transform 0.25s ease-out;
   }
   .atag:hover::after {
-    color:  rgb(227, 160, 5);
+    color:  var(--gray-color);
     transform: scaleX(1);
     transform-origin: bottom left;
   }
@@ -43,5 +88,15 @@ body{
 @media screen and (max-width: 600px) {
     .smp-container{
         width: 95%;
+    }
+    .btn-smp-success{
+      padding: 7px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+      margin-left: 0px;
+    }
+    .search-container{
+      flex-direction: column;
     }
   }

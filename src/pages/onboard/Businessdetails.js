@@ -95,12 +95,12 @@ const Businessdetails = () => {
                                 <h3 className="card-title text-center mb-4">Add your business components</h3>
                                 <div id="itemAdd" >
                                     <div className="mb-3">
-                                        <label htmlFor="bname" className="form-label">Business title</label>
-                                        <input onChange={(e) => setTitle(e.target.value)} value={title} type="text" className="form-control" id="bname" placeholder="Enter business title" required />
+                                        <label htmlFor="bname" className="form-label">Component title</label>
+                                        <input onChange={(e) => setTitle(e.target.value)} value={title} type="text" className="form-control" id="bname" placeholder="Enter title" required />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="bdescription" className="form-label">Business Description</label>
-                                        <textarea onChange={(e) => setDescription(e.target.value)} value={description} placeholder="Enter business description" className="form-control" id="bdescription"></textarea>
+                                        <label htmlFor="bdescription" className="form-label">Component Description</label>
+                                        <textarea onChange={(e) => setDescription(e.target.value)} value={description} placeholder="Enter description" className="form-control" id="bdescription"></textarea>
                                     </div>
                                     <div className="row">
                                         <div className="col-md-12">
